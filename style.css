@@ -1,0 +1,356 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/avenir_ff/AvenirLTStd-Book.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Montserrat;
+}
+:root {
+  --white: #ffffff;
+  --primary-color: #1fa1db;
+  --black-bg: #231f20;
+}
+.container {
+  max-width: 1200px;
+}
+.container-fluid {
+  max-width: 1920px;
+}
+.primary-btn {
+  padding: 14px;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
+.blue-btn {
+  background: var(--primary-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--white);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 224px;
+  height: 60px;
+}
+.section-head {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #231f20;
+}
+.section-text {
+  font-family: Avenir;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #231f20;
+}
+.underline {
+  height: 1px;
+  background: #dddddd;
+  margin: 100px 0;
+}
+
+header {
+  max-width: 1760px !important;
+}
+.navbar-nav {
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+.banner {
+  background: url(./assets/welcome-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 900px;
+  background-position: center;
+}
+.banner .container {
+  min-height: 900px;
+}
+.nav-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff !important;
+}
+.welcome-text {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+}
+.banner-head h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 70px;
+}
+.roi {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.banner-bottom {
+  min-height: 160px;
+  background: #1fa1db;
+  padding: 40px 0px;
+}
+.banner-bottom .container {
+  row-gap: 1.5rem;
+}
+.banner-bottom .container > div {
+  gap: 1.4rem;
+  flex: 1;
+}
+.banner-bottom .container > div h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.technology {
+  padding: 100px 0px;
+}
+.sales {
+  background: #f8f8f8;
+  padding: 100px 0px;
+}
+.feedback {
+  background: url(./assets/feedback-bg-img.png);
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 160px 0px;
+}
+
+.feedback .col-lg-6 {
+  gap: 2rem;
+  flex: 1;
+}
+.feedback .col-lg-6 .content {
+  font-family: Avenir;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+.feedback .pro-details > p:first-child {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+.plans {
+  padding: 100px 0px;
+}
+.step span {
+  background: var(--primary-color);
+  color: var(--white) !important;
+  border-radius: 10px;
+  padding: 5px 16px;
+}
+.step h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #231f20;
+}
+.gray-hr {
+  background: #dddddd;
+  height: 1px;
+  width: 100%;
+  margin: 100px 0px;
+}
+.plans .card {
+  border: 1px solid #1fa1db;
+  border-radius: 20px;
+  padding: 29px 80px;
+  /* min-height: 130px; */
+  height: 100%;
+}
+.support .blue-btn {
+  margin-top: 35px;
+}
+.plans .card img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  bottom: 51px;
+}
+.plans .card h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  color: #231f20;
+}
+.company {
+  background: #f8f8f8;
+  padding: 100px 0px;
+}
+/* .company .img {
+  padding-left: 5rem;
+} */
+.company .section-head {
+  margin-bottom: 60px;
+}
+.support {
+  background: #1fa1db;
+  padding: 100px 0px;
+}
+.partners {
+  padding: 60px 0px;
+}
+footer {
+  min-height: 360px;
+  padding: 60px 0px;
+  background: #231f20;
+}
+.address {
+  gap: 3rem;
+}
+footer li {
+  list-style: none;
+}
+.footer-line {
+  height: 1px;
+  background: #dddddd;
+  opacity: 0.2;
+  margin: 30px 0px;
+}
+.footer-nav ul {
+  gap: 1.8rem;
+}
+.footer-nav a,
+.address a,
+.credits,
+.text {
+  color: #8c8c8c;
+}
+.contact-medium {
+  color: var(--primary-color);
+}
+.number-mail .d-flex p {
+  white-space: nowrap;
+}
+@media screen and (max-width:992px) {
+  .nav-link{
+    color: black !important;
+  }
+  .navbar-nav{
+    background: white;
+  }
+  .company img , .technology img {
+    width:75% !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .banner-head h1 {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 43px;
+    margin-bottom: 2rem !important;
+  }
+  .welcome-text {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .blue-btn {
+    background: var(--primary-color);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 156px;
+    height: 36px;
+    margin: 1rem !important;
+  }
+  .technology,
+  .sales,
+  .feedback,
+  .plans,
+  .company,
+  .support,
+  footer {
+    padding: 50px 0px;
+  }
+  .section-head {
+    font-size: 33px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .feedback .col-lg-6 {
+    display: block !important;
+    text-align: center;
+  }
+  .feedback .row {
+    flex-direction: column !important;
+  }
+  .plans .row .col-lg-6 {
+    text-align: center !important;
+  }
+  .section-text {
+    text-align: center;
+  }
+  /* .company .img {
+    padding-left: 15px;
+  } */
+  .support .row .col-lg-6:first-child {
+    text-align: center;
+  }
+  .footer-nav,
+  .number-mail {
+    justify-content: center !important;
+  }
+  .gray-hr {
+    margin: 50px 0px;
+  }
+
+}
+
+@media screen and (max-width: 258px) {
+  .banner-head h1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .section-head {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .banner-bottom .container > div h2 {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .footer-logo img {
+    width: 85%;
+  }
+  .banner-bottom .container > div{
+    display: block !important;
+    text-align: center;
+  }
+  .number-mail .d-flex p{
+    font-size: 12px;
+  }
+}
